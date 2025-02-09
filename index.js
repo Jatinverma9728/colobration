@@ -14,6 +14,7 @@ document.querySelectorAll(".controls").forEach((control) => {
     selectedLocation = JSON.parse(savedLocation);
   }
 
+  
   locationPin.addEventListener("click", () => {
     if (selectedLocation || isFetching) return; // Skip if location is already fetched or fetching
 
